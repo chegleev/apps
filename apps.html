@@ -37,13 +37,17 @@
 	}
 	#btn {
 		background-color: #ffffff;
-		border: 0px solid #ffffff;
+		border: 0px solid #000000;
 		border-radius: 10px;
+		margin-left: 5px;
+		margin-right: 5px;
 		padding-top: 5px;
 		padding-bottom: 5px;
-		font-family: sans-serif;
-		font-size: 18px;
-		color: #ffffff;
+	}
+	.div-center {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 	#otherfont {
 		font-family: sans-serif;
@@ -64,9 +68,11 @@
 		<font id="title2">для вашего телефона / планшета</font>
 		<br><br>
 		<font id="title2">Вы можете нам помочь любой суммой,<br>одним из этих способов.</font><br>
-		<button id="btn" type="button" onclick="location.href='intent://ru.sberbankmobile/dialogs?username=WBXRtdVhrQX6mLrby#Intent;scheme=android-app;package=ru.sberbankmobile;end';"><img src="sb.svg"></button>
-		<button id="btn" type="button" onclick="location.href='intent://n/chegleev/#Intent;scheme=qiwi;package=ru.mw;end';"><img src="qw.svg"></button>
-		<button id="btn" type="button" onclick="location.href='intent://transfer/p2p?to=410012101816159#Intent;scheme=yoomoney;package=ru.yoo.money;end';"><img src="ym.svg"></button>
+		<div class="div-center">
+			<button id="btn" class="div-center" type="button" onclick="location.href='intent://ru.sberbankmobile/dialogs?username=WBXRtdVhrQX6mLrby#Intent;scheme=android-app;package=ru.sberbankmobile;end';"><img src="sb.svg"></button>
+			<button id="btn" class="div-center" type="button" onclick="location.href='intent://n/chegleev/#Intent;scheme=qiwi;package=ru.mw;end';"><img src="qw.svg"></button>
+			<button id="btn" class="div-center" type="button" onclick="location.href='intent://transfer/p2p?to=410012101816159#Intent;scheme=yoomoney;package=ru.yoo.money;end';"><img src="ym.svg"></button>
+		</div>
 	</div>
 </center>
 <table>
