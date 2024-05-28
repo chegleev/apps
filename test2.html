@@ -5,8 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Test2</title>
 </head>
-<body onload="location.href='intent://'+values[host]+'#Intent;scheme='+values[scheme]+';package='+values[package]+';end';">
-</body>
 <script>
 var p_url = location.search.substring(1);
 var parametr = p_url.split("&");
@@ -16,4 +14,6 @@ for(i in parametr) {
     values[j[0]] = unescape(j[1]);
 }
 </script>
+<body onload="location.href='intent://'+values[host]+'#Intent;scheme='+values[scheme]+';package='+values[package]+';end';">
+</body>
 </html>
